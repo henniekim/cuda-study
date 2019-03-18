@@ -18,6 +18,7 @@ To execute the example
 1. OS : Ubuntu 16.04
 2. CUDA Version : 10.1
 1. GPU : NVIDIA GTX1070TI
+2. FreeGlut 
 ## For VSCode Users
 for vscode the tasks.json file will be like this
 

@@ -1,11 +1,12 @@
 #include "./common/book.h"
 
-#define N 512
+#define N 16
 
 __global__ void add(int *a, int *b, int *c)
 {
     int tid=blockIdx.x;
-    //printf(" thread id is : %d \n", tid); // just for fun 
+
+    printf(" thread id is : %d \n", tid); // just for fun 
     if (tid <N)
     {
         c[tid] = a[tid] + b[tid];
