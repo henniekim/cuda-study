@@ -1,0 +1,49 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "save and compile for CUDA",
+            "type": "shell",
+            "command": "nvcc",
+            "args": [
+                "${fileDirname}/${fileBasenameNoExtension}.cu",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-lglut",
+                "-lGL",
+                "-lGLU"
+            
+            ],
+            "group" : "build",
+
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    // The regular expression. 
+                   //Example to match: helloWorld.c:5:3: warning: implicit declaration of function 'prinft'
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        
+        },
+
+        // execute binary ! (ubuntu 16.04)
+        {
+            "label": "execute",
+            "type": "shell",
+            "command": "${fileDirname}/${fileBasenameNoExtension}",
+            "group" : "test"
+
+        }
+    ]
+}
