@@ -3,22 +3,38 @@
 ## Introduction
 This repository is for studying CUDA with the book "CUDA by example - an introduction to GPGPU programing". The code in this repository is originally from the book and I fixed a little bit in my favor. 
 
-## How to compile
+## 1. Contents
+### [1.1 cuda-by-examples](/cuda-by-examples)
+- ch04   
+   - [vector addition](/cuda-by-examples/vector_addition.cu)
+   - [julia set](cuda-by-examples/julia_set_examples.cu)  
+   - [mandelbrot](/cuda-by-examples/vector_addition.cu)  
+- ch05
+  - [waving](/cuda-by-examples/wave_using_thread.cu)
+  - [shared memory](/cuda-by-examples/shared_memory.cu)  
+
+
+### [1.2 cuda-image-processing](/cuda-image-processing)
+- intensity transformation
+  - [negative](/cuda-image-processing/image_negative.cu)
+  -  
+
+## 2. How to compile
 To compile *.cu file the command is like following
 ```shell
- nvcc mandelbrot.cu -o mandelbrot -lglut -lGL -lGLU
+ nvcc mandelbrot.cu -o mandelbrot -lglut -lGL -lGLU // 
 ```
-## How to execute
+## 3. How to execute
 To execute the example
 ```shell
-./mandelbrot
+./mandelbrot.cubin
 ```
 
-## Dependencies
+## 4. Dependencies
 1. OS : Ubuntu 16.04
 2. CUDA Version : 10.1
-1. GPU : NVIDIA GTX1070TI
-2. FreeGlut 
+3. GPU : NVIDIA GTX1070TI
+4. FreeGlut 
 ## For VSCode Users
 for vscode the tasks.json file will be like this
 
