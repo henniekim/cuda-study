@@ -1,4 +1,4 @@
-#include "../common/book.h"
+#include "./common/book.h"
 
 #define N 16
 
