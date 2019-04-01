@@ -3,6 +3,9 @@
 ## Introduction
 This repository is for studying CUDA with the book "CUDA by example - an introduction to GPGPU programing". The code in this repository is originally from the book and I fixed a little bit in my favor. 
 
+## Good to see together
+[What is thread / block / grid ?](/https://www.olcf.ornl.gov/wp-content/uploads/2013/02/Intro_to_CUDA_C-TS.pdf)
+
 ## 1. Contents
 ### [1.1 cuda-by-examples](/cuda-by-examples)
 - ch04   
